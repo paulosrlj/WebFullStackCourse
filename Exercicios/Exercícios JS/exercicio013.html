@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+    
+        let kb = window.prompt("Informe um tamanho em KB: ");
+        document.write(`O valor em bits é: ${(kb * 1024) * 8}<br>`);
+        document.write(`O valor em bytes é: ${kb * 1024}<br>`);
+        document.write(`O valor em Megabytes é: ${kb / 1024}<br>`);
+        document.write(`O valor em Gigabytes é: ${(kb / 1024) / 1024}<br>`);
+    
+    </script>
+    
+</body>
+</html>

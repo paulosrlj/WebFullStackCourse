@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numero = window.prompt("Informe um número para ver o reverso: ");
+        let reverso = [];
+        let tamanho = numero.length;
+        numero = parseInt(numero, 10);
+        document.write(typeof numero,"<br>")
+
+        for(let k = 0; k<tamanho; k++){
+            reverso[k] = numero % 10;
+            //document.write(reverso[k], "<br>")
+            numero = Math.floor(numero / 10);
+            //numero = numero / 10; // Faz a divisão como float e não só como inteiro.
+            //document.write(numero, "<br>")
+        }
+
+        document.write(`${reverso.join('')}<br>`);
+        document.write(reverso)
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const preco_gasolina = parseFloat(window.prompt("Informe o preco do litro de gasolina: "));
+        const preco_alcool = parseFloat(window.prompt("Informe o preço do litro de álcool: "));
+        
+        if(preco_gasolina * 0.7 <= preco_alcool) {
+            document.write("Abasteça com gasolina.<br>");
+        }
+        else {
+            document.write("Abasteça com álcool.<br>");
+        }
+
+        document.write(typeof preco_alcool,"<br>");
+        document.write(parseFloat(preco_alcool, 10) + parseFloat(preco_gasolina, 10), "<br>");
+        document.write(typeof preco_gasolina);
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let vetor = new Array;
+        for(let i=0; i<10; i++){
+            vetor[i] = prompt('Informe um número: '); 
+        }
+        vetor.reverse();
+        //document.getElementsByTagName('body').innerHTML = vetor;
+        document.write(vetor,"<br>")
+        document.write(vetor.pop(),"<br>")
+        document.write(vetor,"<br>")
+        vetor.push('50')
+        document.write(vetor)
+    </script>
+</body>
+</html>

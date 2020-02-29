@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            font-size: 15pt;
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <script>
+        const tabuada = Number(10);
+        let numero = Number(window.prompt("Informe um número para ver a tabuada: "));
+        let k;
+        
+        for(k=0; k<tabuada; k++){
+            document.write(`${numero} X ${k+1} = ${numero * (k+1)}<br>`);
+        }
+        
+    </script>
+    </div>
+</body>
+</html>

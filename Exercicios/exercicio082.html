@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function lerNotas() {
+             nota1 = parseFloat(prompt("Informe a 1° nota: ")); //Váriaveis sem declaração de var, são do escopo global
+             nota2 = parseFloat(prompt("Informe a 2° nota: "));
+             nota3 = parseFloat(prompt("Informe a 3° nota: "));
+        }
+    
+        lerNotas();
+
+        //Funções
+        media = (nota1, nota2, nota3) => (nota1 + nota2 + nota3) / 3;
+        notaFinal = media => {
+            var mediaFinal = (25 - (3 * media) / 2);
+            document.write(`Será necessário ${mediaFinal.toFixed(2)}.`);
+        }
+        verificaAprovacao = media => {
+            if(media >= 7)
+                document.write("Aprovado");
+            else if(media >= 4)
+                notaFinal(media);
+            else
+                document.write("Reprovado");
+        }
+
+        //Chamando as funções
+        verificaAprovacao(media(nota1, nota2, nota3));
+    </script>
+</body>
+</html>

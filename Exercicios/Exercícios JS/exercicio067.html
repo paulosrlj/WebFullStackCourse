@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const ano = window.prompt("Informe um ano para ver se é bissexto: ");
+
+        function ano_bissexto(ano){
+            if (ano % 400 == 0){
+                return true;
+            }
+            else if(ano % 4 == 0 && ano % 100 != 0){
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+        if(ano_bissexto(ano) == true){
+            document.write("O ano é bissexto.<br>Ótimo.");
+        }
+        else {
+            document.write("O ano não é bissexto: ");
+        }
+    </script>
+</body>
+</html>

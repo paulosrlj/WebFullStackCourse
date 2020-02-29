@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*let numero = Number(window.prompt("Informe um número para ver o reverso: "));
+        let reverso = [];
+        let tamanho = numero.toString(10).length;*/
+
+        let numero = window.prompt("Informe um número para ver o reverso: ");
+        let reverso = numero.split('').reverse().join(''); //split(''), separa caractere por caractere
+                                                           //join('') junta todos os caracteres, join() junta e separa por uma virgula, join('-') junta e coloca um espaço entre elementos 
+
+        document.write(reverso);
+
+    </script>
+</body>
+</html>

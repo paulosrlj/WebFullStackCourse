@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        function converteDecimal(decimal){
+             decimal = decimal.toString(2);
+             return decimal;
+        }
+
+        function converteBinario(binario){
+            binario = parseInt(binario, 2) //converte para decimal, o 2°parametro representa a base da string(1°parametro)
+            return binario;
+            
+        }
+
+        let decimal = Number(window.prompt("Informe um número decimal: : "));
+        let binario = Number(window.prompt("Informe um número binário: "));
+        
+        document.write(`${decimal} corresponde a: ${converteDecimal(decimal)} em binário.<br>`); // ou decimal.toString(2)
+        document.write(`${binario} corresponde a: ${converteBinario(binario)} em decimal.<br>`)
+        
+    </script>
+</body>
+</html>

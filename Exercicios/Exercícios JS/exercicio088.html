@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numero = parseInt(prompt("Informe um número entre 10000 e 99999: "));
+
+        if (numero >= 10000 && numero <=99999){
+            numero = Math.trunc(numero / 1000);
+
+            switch(numero) {
+                case 13:
+                document.write("O candidato concorre pelo PT.");
+                break;
+
+                case 14:
+                document.write("O candidato concorre pelo PTB.");
+                break;
+
+                case 15:
+                document.write("O candidato concorre pelo PMDB.");
+                break;
+
+                case 25:
+                document.write("O candidato concorre pelo DEM.");
+                break;
+
+                case 45:
+                document.write("O candidato concorre pelo PSDB.");
+                break;
+
+                case 65:
+                document.write("O candidato concorre pelo PCdoB.");
+                break;
+
+                default:
+                document.write("O candidato não concorre em nenhum partido.");
+                
+            }
+
+
+        } else {
+            document.write("Numero inválido.");
+        }
+    </script>
+</body>
+</html>

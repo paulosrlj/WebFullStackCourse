@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Calcular todas as raizes reais de uma equação do 2°grau
+        window.alert("==== Programa que calcula as raizes reais de um polinômio do 2°Grau. ====");
+        const a = parseFloat(window.prompt("Informe o coeficiente 'a': "));
+        const b = parseFloat(window.prompt("Informe o coeficiente 'b': "));
+        const c = parseFloat(window.prompt("Informe o coeficiente 'c': "));
+
+        function raizes(a, b, c) {
+            const delta = Math.pow(b, 2) - 4 * a * c;
+            const raiz_1 = (-b + Math.sqrt(delta)) / 2 * a;
+            const raiz_2 = (-b - Math.sqrt(delta)) / 2 * a;
+            document.write(`As raizes são ${raiz_1} e ${raiz_2}`);
+        }
+
+        raizes(a, b, c);
+    </script>
+</body>
+</html>
