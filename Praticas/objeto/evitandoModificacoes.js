@@ -1,5 +1,5 @@
 //Object.preventsExtensions -> Não permite adicionar mais atributos ao objeto, mas é possivel altera-lo ou excluir um atributo
-const produto = Object.preventExtensions({nome: 'Qualquer', preco: 1.99, tag: 'promocao'})
+const produto = Object.preventExtensions({ nome: 'Qualquer', preco: 1.99, tag: 'promocao' })
 console.log('Extensivel:', Object.isExtensible(produto))
 
 produto.nome = 'Borracha'
@@ -8,7 +8,7 @@ delete produto.tag
 console.log(produto)
 
 //Object.seal -> possivel mexer nos atributos, mas não adicionar ou excluir
-const pessoa = {nome: 'Juliana', idade: 35}
+const pessoa = { nome: 'Juliana', idade: 35 }
 Object.seal(pessoa)
 console.log('Selado: ', Object.isSealed(pessoa))
 

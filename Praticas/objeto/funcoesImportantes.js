@@ -18,6 +18,8 @@ Object.defineProperty(pessoa, 'dataNascimento', { //(target, propriedade, caract
     value: '01/01/2019'
 })
 
+console.log(pessoa)
+
 pessoa.dataNascimento = '01/01/2017';
 console.log(pessoa.dataNascimento)
 console.log(Object.keys(pessoa))
@@ -35,3 +37,4 @@ const o2 = {
 }
 const obj = Object.assign(dest, o1, o2) //retorna o objeto destino, no caso o objeto 'dest'
 console.log(obj)
+

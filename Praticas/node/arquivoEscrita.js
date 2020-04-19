@@ -11,6 +11,6 @@ const produto = {
     console.log(err || 'Arquivo salvo!')
 })*/
 
-fs.writeFile(__dirname + '/arquivoGerado.json', JSON.stringify(produto), error => {
+fs.writeFile(__dirname + '/arquivoGerado2.json', JSON.stringify(produto), error => {
     console.log(error || 'Sucesso')
 })

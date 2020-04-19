@@ -9,6 +9,7 @@ const getTurma = letra => {
 
             res.on('data', dados => {
                 resultado += dados
+                console.log(resultado)
             })
 
             res.on('end', () => {

@@ -1,7 +1,7 @@
 const nums = [1, 2, 3, 4, 5]
 
 //For com propósito, GERA UM NOVO ARRAY
-let resultado = nums.map(function(e){
+let resultado = nums.map(function (e) {
     return e * 2
 })
 
@@ -13,3 +13,4 @@ const paraDinheiro = e => `R$ ${parseFloat(e).toFixed(2).replace('.', ',')}`;
 
 resultado = nums.map(soma10).map(triplo).map(paraDinheiro);
 console.log(resultado)
+
