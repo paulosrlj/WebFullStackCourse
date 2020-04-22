@@ -1,0 +1,41 @@
+<div id='slider'>
+
+    <p>
+        <img src='http://files.cod3r.com.br/curso-web/imagem1.jpg' imgslider alt='Muro da cidade' width="513"
+            height="342">
+    </p>
+
+    <p>
+        <img src='http://files.cod3r.com.br/curso-web/imagem2.gif' imgslider alt='Intro cod3r' height="342"
+            title='Cod3r'>
+    </p>
+
+    <p>
+        <img src='http://files.cod3r.com.br/curso-web/imagem3.png' imgslider alt='Rio de Janeiro' height="342">
+    </p>
+
+    <p>
+        <img src='http://files.cod3r.com.br/curso-web/avatar.jpg' imgslider alt='Avatar' height="50">
+    </p>
+
+</div>
+
+<style>
+    #slider {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #slider p {
+        position: absolute;
+
+    }
+</style>
+
+<script>
+    let imgs = document.querySelectorAll('[imgslider]')
+    console.log(imgs[0])
+
+
+</script>

@@ -43,6 +43,7 @@ let obterAlunos = async () => {
     let turmas = await Promise.all([getTurma('A'), getTurma('B'), getTurma('C')])
 
     let tA = await turmas[0].map(aluno => aluno.nome)
+    console.log(turmas)
     let tB = await turmas[1].map(aluno => aluno.nome)
     let tC = await turmas[2].map(aluno => aluno.nome)
 
